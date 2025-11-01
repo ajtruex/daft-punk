@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daft Punk Side Projects - ALIVE 2007</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace;
+            background-color: #000; /* Black background */
+            color: #eee; /* Off-white text */
+            margin: 0;
+            padding: 2rem;
+        }
+
+        .panel {
+            background-color: #111; /* Dark panel background */
+            border: 1px solid #ff0000; /* Red border */
+            padding: 1.5rem;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.4); /* Red glow */
+            height: 100%; /* Make panels in a grid the same height */
+        }
+        
+        .panel-header {
+            font-size: 1.1rem; /* Slightly smaller for cards */
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #ff0000; /* Red text for headers */
+            border-bottom: 1px solid #ff0000;
+            padding-bottom: 0.5rem;
+        }
+
+        .list-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 0;
+            border-bottom: 1px dashed #444; /* Darker dashed line */
+            font-size: 0.9rem;
+        }
+        .list-item:last-child {
+            border-bottom: none;
+        }
+        .list-item span:first-child {
+            font-weight: 700;
+            color: #ffffff; /* Song titles in white */
+        }
+        .list-item span:last-child {
+            font-style: italic;
+            color: #ff0000; /* Artist/year in red */
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        
+        .section-subtitle {
+            font-size: 0.9rem;
+            color: #a0a0a0;
+            margin-bottom: 1.5rem;
+        }
+
+        .stat-block {
+            display: flex;
+            gap: 2rem;
+            margin: 1.5rem 0;
+            padding: 1rem 0;
+            border-top: 1px solid #444;
+            border-bottom: 1px solid #444;
+        }
+        .stat-item {
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+        }
+        .stat-item .value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ff0000;
+        }
+        .stat-item .label {
+            font-size: 0.9rem;
+            color: #a0a0a0;
+        }
+        
+        .footer-archive {
+            background-color: #111;
+            padding: 2rem;
+            margin-top: 3rem;
+            text-align: center;
+            color: #a0a0a0;
+            font-size: 0.9rem;
+            border: 1px solid #444;
+        }
+
+        /* Scrollbar styles for red theme */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a1a1e;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #ff0000;
+            border-radius: 20px;
+            border: 1px solid #0d0d0f;
+        }
+        ::-webkit-scrollbar-corner {
+            background: #1a1a1e;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="max-w-7xl mx-auto">
+    
+        <!-- Header -->
+        <header class="text-center my-8">
+            <h1 class="text-4xl font-bold text-white">The Complete Side Projects & Productions</h1>
+            <p class="text-lg text-gray-400 mt-2">An archive of all productions by Thomas Bangalter and Guy-Manuel de Homem-Christo outside of Daft Punk.</p>
+        </header>
+
+        <!-- Stats Bar -->
+        <div class="stat-block">
+            <div class="stat-item">
+                <span class="value">10+</span>
+                <span class="label">Groups & Aliases</span>
+            </div>
+            <div class="stat-item">
+                <span class="value">50+</span>
+                <span class="label">Total Tracks</span>
+            </div>
+            <div class="stat-item">
+                <span class="value">20+</span>
+                <span class="label">Artists Produced</span>
+            </div>
+        </div>
+
+        <!-- Thomas Bangalter Section -->
+        <section>
+            <h2 class="section-title">Thomas Bangalter</h2>
+            <p class="section-subtitle">Archive of solo work and collaborations.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Thomas: Solo Projects -->
+                <div class="panel">
+                    <div class="panel-header">Solo Projects</div>
+                    <ul class="song-list">
+                        <li class="list-item"><span><i>Trax on da Rocks</i> (EP)</span> <span>1995</span></li>
+                        <li class="list-item"><span><i>Spinal Scratch</i> (EP)</span> <span>1996</span></li>
+                        <li class="list-item"><span><i>Trax on da Rocks Vol. 2</i> (EP)</span> <span>1998</span></li>
+                        <li class="list-item"><span><i>Irréversible</i> (Soundtrack)</span> <span>2002</span></li>
+                        <li class="list-item"><span><i>Mythologies</i> (Ballet)</span> <span>2022</span></li>
+                        <li class="list-item"><span><i>Daaaaaalí!</i> (Soundtrack)</span> <span>2023</span></li>
+                        <li class="list-item"><span><i>Chiroptera</i> (Art Piece)</span> <span>2024</span></li>
+                    </ul>
+                </div>
+                
+                <!-- Thomas: Soundtracks / Other -->
+                <div class="panel">
+                    <div class="panel-header">Soundtracks & Features</div>
+                    <ul class="song-list">
+                        <li class="list-item"><span>"Riga (Take 5)"</span> <span><i>Riga (Take 1)</i></span></li>
+                        <li class="list-item"><span>"Sangria"</span> <span><i>Climax</i></span></li>
+                        <li class="list-item"><span>"That Night in Brazil"</span> <span><i>En Corps</i></span></li>
+                        <li class="list-item"><span>"Spark da Meth"</span> <span><b>Da Mongoloids</b></span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guy-Manuel de Homem-Christo Section -->
+        <section>
+            <h2 class="section-title">Guy-Manuel de Homem-Christo</h2>
+            <p class="section-subtitle">Archive of solo work and collaborations.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Guy-Man: Le Knight Club -->
+                <div class="panel">
+                    <div class="panel-header">Le Knight Club</div>
+                    <p class="text-sm text-gray-400 mb-4">with Eric Chedeville</p>
+                    <ul class="song-list">
+                        <li class="list-item"><span><i>Waves</i> (Comp. Album)</span> <span>2000</span></li>
+                        <li class="list-item"><span><i>Waves II</i> (Comp. Album)</span> <span>2003</span></li>
+                        <li class="list-item"><span>"Holiday on Ice"</span> <span>Le Knight Club</span></li>
+                        <li class="list-item"><span>"Gator"</span> <span>Le Knight Club</span></li>
+                        <li class="list-item"><span>"Soul Bells"</span> <span>Le Knight Club</span></li>
+                        <li class="list-item"><span>"Hysteria"</span> <span>Le Knight Club</span></li>
+                        <li class="list-item"><span>"The Fight"</span> <span><i>Gates of the Sun</i></span></li>
+                    </ul>
+                </div>
+                
+                <!-- Guy-Man: Other Projects -->
+                <div class="panel">
+                    <div class="panel-header">Other Projects</div>
+                    <p class="text-sm text-gray-400 mb-4">Productions & Co-Writes</p>
+                    <ul class="song-list">
+                        <li class="list-item"><span><i>Sexuality</i> (Album)</span> <span>Sébastien Tellier</span></li>
+                        <li class="list-item"><span>"See Me Now"</span> <span>Cassius</span></li>
+                        <li class="list-item"><span>"My Poseidon"</span> <span>Sébastien Tellier</span></li>
+                        <li class="list-item"><span>"Rest"</span> <span>Charlotte Gainsbourg</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Collaborative Projects -->
+        <section>
+            <h2 class="section-title">Collaborative Projects</h2>
+            <p class="section-subtitle">Projects featuring both members or other notable aliases.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Stardust -->
+                <div class="panel">
+                    <div class="panel-header">Stardust</div>
+                    <p class="text-sm text-gray-400 mb-4">(Thomas Bangalter, Alan Braxe, Benjamin Diamond)</p>
+                    <ul class="song-list">
+                        <li class="list-item"><span>"Music Sounds Better with You"</span> <span>1998</span></li>
+                    </ul>
+                </div>
+                
+                <!-- Together -->
+                <div class="panel">
+                    <div class="panel-header">Together</div>
+                    <p class="text-sm text-gray-400 mb-4">(Thomas Bangalter & DJ Falcon)</p>
+                    <ul class="song-list">
+                        <li class="list-item"><span>"Together"</span> <span>2000</span></li>
+                        <li class="list-item"><span>"So Much Love to Give"</span> <span>2002</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Production Credits Section -->
+        <section>
+            <h2 class="section-title">Production Credits</h2>
+            <p class="section-subtitle">Songs produced/co-written for other artists.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <!-- Productions: Thomas -->
+                <div class="panel">
+                    <div class="panel-header">Credits: Thomas Bangalter</div>
+                    <ul class="song-list">
+                        <li class="list-item"><span>"Gym Tonic"</span> <span><b>Bob Sinclar</b></span></li>
+                        <li class="list-item"><span>"Everything Now" (Album)</span> <span><b>Arcade Fire</b></span></li>
+                    </ul>
+                </div>
+                
+                <!-- Productions: Guy-Man -->
+                <div class="panel">
+                    <div class="panel-header">Credits: Guy-Manuel</div>
+                    <ul class="song-list">
+                        <li class="list-item"><span>"Nightcall"</span> <span><b>Kavinsky</b></span></li>
+                        <li class="list-item"><span>"Hurt You"</span> <span><b>The Weeknd</b></span></li>
+                        <li class="list-item"><span>"Modern Jam"</span> <span><b>Travis Scott</b></span></li>
+                    </ul>
+                </div>
+
+                <!-- Productions: Daft Punk (as duo) -->
+                <div class="panel md:col-span-2">
+                    <div class="panel-header">Credits: Daft Punk (as Duo)</div>
+                    <ul class="song-list">
+                        <li class="list-item"><span>"Starboy"</span> <span><b>The Weeknd</b></span></li>
+                        <li class="list-item"><span>"I Feel It Coming"</span> <span><b>The Weeknd</b></span></li>
+                        <li class="list-item"><span>"Overnight"</span> <span><b>Parcels</b></span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer-archive">
+            <p>ARCHIVE_STATUS :: LIVE :: DATA_COMPILED_2025</p>
+            <p class="mt-2">This is a fan-compiled archive. All production credits belong to the original artists and labels. This project is not officially affiliated with Daft Punk.</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
+
